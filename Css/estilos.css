@@ -58,7 +58,11 @@ ul {
 footer {
     font-size: 10px;
     text-align: center;
-    padding: 5px 1rem;
+    padding: 5px 0px;
+}
+
+footer p {
+    margin-bottom: 0px;
 }
 
 
@@ -83,15 +87,22 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     font-size: 12px;
-    margin-top: 20px;
+    margin-top: 40px;
     height: 40px;
     width: 170px;
     border-radius: 30px;
     border: none;
     background-color: black;
     color: white;
+    transition: 0.3s;
 }
 
+.inicio_boton:hover {
+    background-color: #9E1FED;
+    box-shadow: 0 0 10px #9E1FED, 0 0 40px #9E1FED, 0 0 80px #9E1FED;
+    transition-delay: 0.5s;
+}
+  
 .inicio_section_2 {
     padding: 1rem;
     height: 100%;
@@ -151,6 +162,13 @@ footer {
     border: none;
     background-color: black;
     color: white;
+    transition: 0.3s;
+}
+
+.descargar_boton:hover {
+    background-color: #9E1FED;
+    box-shadow: 0 0 10px #9E1FED, 0 0 40px #9E1FED, 0 0 80px #9E1FED;
+    transition-delay: 0.5s;
 }
 
 .descargar_section_2 {
@@ -219,8 +237,13 @@ footer {
     padding: 30px 60px 0px 60px; 
 }
 
+/*Efectos para la pagina de INICIO*/
+
+
 
 /* RESPONSIVE para dispositivos de 768px de ancho para la pagina de INICIO*/
+
+
 
 @media screen and (min-width: 769px) {
 
