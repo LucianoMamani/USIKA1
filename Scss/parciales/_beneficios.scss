@@ -1,0 +1,23 @@
+/* Estilos para la pagina de BENEFICIOS*/
+
+.beneficios_section {
+    padding: 1rem;
+    height: 100%;
+    background-image: url(../Imagenes/fondodelasection2.svg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 250px 400px;
+    justify-items: center;
+    align-items: center;
+}
+
+.beneficios_titulo {
+    margin-top: 30px;
+}
+
+.beneficios_parrafo {
+    font-size: 18px;
+    padding: 30px 60px 0px 60px; 
+}

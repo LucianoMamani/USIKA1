@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-negro;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/* estilo para todas las paginas del sitio */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-negro;
+    margin: 0px 30px;
+}
+
+ul {
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.logodelsitio {
+    height: 80px;
+}
+
+.listas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.enlaces {
+    margin: 0px 20px;
+}
+
+.enlaces_2 {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.enlaces :hover {
+    color: #9E1FED;
+}
+
+.menu {
+    height: 40px;
+    margin-top: 18px;
+}
+
+footer {
+    background-color: #1a0527;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+footer p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+

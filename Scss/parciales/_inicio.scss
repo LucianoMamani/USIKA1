@@ -1,0 +1,60 @@
+/* estilos para la pagina de INICIO */
+
+.inicio_section {
+    padding: 1rem;
+    height: 620px;
+    background-color: #001220;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio_titulo {
+    font-size: 40px;
+    margin: 0px 300px;
+}
+
+.inicio_boton {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 40px;
+    height: 40px;
+    width: 170px;
+    border-radius: 30px;
+    border: none;
+    background-color: $color-negro;
+    color: white;
+    transition: 0.3s;
+}
+
+.inicio_boton:hover {
+    background-color: #9E1FED;
+    box-shadow: 0px 0px 10px #9E1FED, 0px 0px 40px #9E1FED, 0px 0px 80px #9E1FED;
+    transition-delay: 0.5s;
+}
+  
+.inicio_section_2 {
+    padding: 1rem;
+    height: 100%;
+    background-image: url(../Imagenes/fondodelasection2.svg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 250px 400px;
+    justify-items: center;
+    align-items: center;
+}
+
+.inicio_titulo_2 {
+    font-size: 30px;
+    padding: 0px 1rem;
+    text-align: center;
+}
+
+.inicio_parrafo {
+    font-size: 18px;
+    margin: 0px 100px;
+}
