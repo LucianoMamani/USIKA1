@@ -1,3 +1,39 @@
+/*RESPONSIVE para el HEADER*/
+
+@media screen and (max-width: 425px) {
+
+    footer {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .logo_footer {
+        grid-area: ele1;
+        height: 80px;
+        padding-left: 0rem;
+    }
+
+    .footer2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;   
+        padding-right: 0rem;
+    }
+
+    .footer_parrafo {
+        grid-area: ele3;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+        padding-right: 0rem;
+        margin-bottom: 2rem;
+    }
+}
+
 /* RESPONSIVE para dispositivos de 768px de ancho para la pagina de INICIO*/
 
 @media screen and (min-width: 769px) {
@@ -99,6 +135,8 @@
     .inicio_parrafo {
         margin: 0px 50px;
     }
+
+
 }
 
 @media screen and (max-width: 320px) {
@@ -113,7 +151,14 @@
     }
     
     .inicio_section_2 {
-        grid-template-rows: 200px 500px 300px;
+        grid-template-rows: 200px 700px 300px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    
+    .inicio_section_2 {
+        grid-template-rows: 200px 800px 300px;
     }
 }
 
@@ -127,7 +172,16 @@
     }
 }
 
-@media screen and (max-width: 425px) and (min-width: 321px) {
+@media screen and (max-width: 425px) {
+    .descargar_section_2 {
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 150px 100px 100px;
+        grid-template-areas: 
+        'ele1'
+        'ele2'
+        'ele3'
+        'ele4';
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -159,6 +213,23 @@
         padding-top: 20px;
         height: auto;
         width: 130px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .descargar_section {
+        height: 500px;
+    }
+
+    .descargar_section_2 {
+        grid-template-columns: 100%;
+        grid-template-rows: 200px 150px auto 100px;
+        grid-template-areas: 
+        'ele1'
+        'ele2'
+        'ele3'
+        'ele4';
     }
 }
 
@@ -206,6 +277,13 @@
     }
 
     .beneficios_section {
-        grid-template-rows: 200px 700px 300px;
+        grid-template-rows: 200px 800px 400px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .beneficios_section {
+        grid-template-rows: 200px 900px 400px;
     }
 }
