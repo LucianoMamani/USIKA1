@@ -2,20 +2,20 @@
 
 @media screen and (max-width: 425px) {
 
-    footer {
+    .footer {
         height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
 
-    .logo_footer {
+    .footer_logo {
         grid-area: ele1;
         height: 80px;
         padding-left: 0rem;
     }
 
-    .footer2 {
+    .footer_2 {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;   
@@ -91,7 +91,7 @@
     #listas {
         display: block;
         padding: 80px 0px 0px 40px;
-        background-color: rgba (0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
         width: 70%;
         height: 100vh;
         position: fixed;
@@ -170,6 +170,11 @@
         font-size: 26px;
         margin: 0px 40px;
     }
+
+    .descargar_titulo_2 {
+        font-size: 26px;
+        padding: 0px 40px;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -230,6 +235,20 @@
         'ele2'
         'ele3'
         'ele4';
+    }
+}
+
+/* RESPONSIVE para la pagina de Imagenes*/
+
+@media screen and (max-width: 768px){
+    .imagenes_carrusel {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .imagenes_carrusel {
+        padding: 1rem;
     }
 }
 
