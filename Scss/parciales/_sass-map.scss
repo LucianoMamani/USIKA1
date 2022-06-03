@@ -1,0 +1,85 @@
+/*Mapas*/
+
+$colores: (
+    white: white,
+    black: black
+);
+
+@each $clave, $valor in $colores {
+    .btn-#{$clave} {
+        color: $valor;
+    }
+}
+
+$fondo: (
+    white-fondo: white,
+    black-fondo: black,
+    section-fondo: #001220
+);
+
+@each $clave, $valor in $fondo {
+    .btn-#{$clave} {
+        background-color: $valor;
+    }
+}
+
+/*Map-get*/
+
+$section: (
+    flex-display: flex,
+    direccion: column,
+    centro-justify: center,
+    centro-items: center
+);
+
+.flex {
+    display: map-get($section, flex-display);
+    flex-direction: map-get($section, direccion);
+    justify-content: map-get($section, centro-justify);
+    align-items: map-get($section, centro-items);
+}
+
+/*Extend*/
+
+.extend-titulo {
+    font-size: 40px;
+
+    &-text-align {
+        @extend .extend-titulo;
+        text-align: center;
+    }
+    
+    &-margin {
+        @extend .extend-titulo;
+        margin: 0px 300px;
+    }
+}
+
+.extend-parrafo {
+    font-size: 18px;
+
+    &-text-align {
+        @extend .extend-parrafo;
+        text-align: center;
+    }
+    
+    &-margin {
+        @extend .extend-parrafo;
+        padding: 0px 100px;
+    }
+}
+
+/*Mixing*/
+
+@mixin section ($padding, $height) {
+    padding: $padding;
+    height: $height;
+}
+
+.section-small {
+    @include section (1rem, 620px)
+}
+
+.section-medium {
+    @include section (1rem, 100%)
+}

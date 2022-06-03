@@ -167,7 +167,7 @@
 @media screen and (max-width: 768px) {
     
     .descargar_titulo {
-        font-size: 26px;
+        font-size: 30px;
         margin: 0px 40px;
     }
 
@@ -247,12 +247,26 @@
 }
 
 @media screen and (max-width: 425px){
+    .imagenes_parrafo_1 {
+        font-size: 20px;
+        padding: 20px 20px;
+    }
+
     .imagenes_carrusel {
         padding: 1rem;
+        margin-bottom: 3rem;
     }
 }
 
 /* RESPONSIVE para dispositivos de 768px de ancho para la pagina de Beneficios*/
+
+@media screen and (max-width: 768px) {
+
+    .beneficios_titulo {
+        font-size: 35px;
+        padding: 0px 40px;
+    }
+}
 
 @media screen and (max-width: 480px) {
 
@@ -265,6 +279,7 @@
     
     .beneficios_titulo {
         font-size: 28px;
+        padding: 0px 10px;
     }
     
     .beneficios_parrafo {
@@ -272,7 +287,7 @@
     }
 
     .beneficios_section {
-        grid-template-rows: 200px 700px 300px;
+        grid-template-rows: 400px 750px 300px;
     }
 }
 
@@ -290,13 +305,17 @@
 
 @media screen and (max-width: 320px) {
 
+    .beneficios_titulo {
+        padding: 0px 5px;
+    }
+
     .beneficios_parrafo {
         padding: 20px 10px 0px 10px; 
 
     }
 
     .beneficios_section {
-        grid-template-rows: 200px 800px 400px;
+        grid-template-rows: 350px 800px 300px;
     }
 }
 

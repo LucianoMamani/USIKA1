@@ -1,3 +1,68 @@
+/*Mapas*/
+.btn-white {
+  color: white;
+}
+
+.btn-black {
+  color: black;
+}
+
+.btn-white-fondo {
+  background-color: white;
+}
+
+.btn-black-fondo {
+  background-color: black;
+}
+
+.btn-section-fondo {
+  background-color: #001220;
+}
+
+/*Map-get*/
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Extend*/
+.extend-titulo, .extend-titulo-text-align, .extend-titulo-margin {
+  font-size: 40px;
+}
+
+.extend-titulo-text-align {
+  text-align: center;
+}
+
+.extend-titulo-margin {
+  margin: 0px 300px;
+}
+
+.extend-parrafo, .extend-parrafo-text-align, .extend-parrafo-margin {
+  font-size: 18px;
+}
+
+.extend-parrafo-text-align {
+  text-align: center;
+}
+
+.extend-parrafo-margin {
+  padding: 0px 100px;
+}
+
+/*Mixing*/
+.section-small {
+  padding: 1rem;
+  height: 620px;
+}
+
+.section-medium {
+  padding: 1rem;
+  height: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -102,21 +167,6 @@ nav ul {
 }
 
 /* estilos para la pagina de INICIO */
-.inicio_section {
-  padding: 1rem;
-  height: 620px;
-  background-color: #001220;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.inicio_titulo {
-  font-size: 40px;
-  margin: 0px 300px;
-}
-
 .inicio_boton {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
@@ -126,8 +176,6 @@ nav ul {
   width: 170px;
   border-radius: 30px;
   border: none;
-  background-color: black;
-  color: white;
   transition: 0.3s;
 }
 
@@ -138,8 +186,6 @@ nav ul {
 }
 
 .inicio_section_2 {
-  padding: 1rem;
-  height: 100%;
   background-image: url(../Imagenes/fondodelasection2.svg);
   background-size: cover;
   background-position: center;
@@ -162,16 +208,6 @@ nav ul {
 }
 
 /* estilos para la pagina de DESCARGAR */
-.descargar_section {
-  padding: 1rem;
-  height: 620px;
-  background-color: #001220;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .descargar_titulo {
   font-size: 40px;
   text-align: center;
@@ -193,8 +229,6 @@ nav ul {
   width: 170px;
   border-radius: 30px;
   border: none;
-  background-color: black;
-  color: white;
   transition: 0.3s;
 }
 
@@ -205,8 +239,6 @@ nav ul {
 }
 
 .descargar_section_2 {
-  padding: 1rem;
-  height: 100%;
   background-image: url(../Imagenes/fondodelasection2.svg);
   background-size: cover;
   background-position: center;
@@ -247,7 +279,10 @@ nav ul {
 /* Estilos para la pagina de IMAGENES*/
 .imagenes_section_1 {
   background-color: #001220;
-  height: 100%;
+}
+
+.imagenes_parrafo_1 {
+  padding: 20px 100px;
 }
 
 .imagenes_carrusel {
@@ -256,8 +291,6 @@ nav ul {
 
 /* Estilos para la pagina de BENEFICIOS*/
 .beneficios_section {
-  padding: 1rem;
-  height: 100%;
   background-image: url(../Imagenes/fondodelasection2.svg);
   background-size: cover;
   background-position: center;
@@ -414,7 +447,7 @@ nav ul {
 /*RESPONSIVE para dispositivos de 768px de ancho para la pagina de DESCARGAR */
 @media screen and (max-width: 768px) {
   .descargar_titulo {
-    font-size: 26px;
+    font-size: 30px;
     margin: 0px 40px;
   }
   .descargar_titulo_2 {
@@ -478,12 +511,24 @@ nav ul {
 }
 
 @media screen and (max-width: 425px) {
+  .imagenes_parrafo_1 {
+    font-size: 20px;
+    padding: 20px 20px;
+  }
   .imagenes_carrusel {
     padding: 1rem;
+    margin-bottom: 3rem;
   }
 }
 
 /* RESPONSIVE para dispositivos de 768px de ancho para la pagina de Beneficios*/
+@media screen and (max-width: 768px) {
+  .beneficios_titulo {
+    font-size: 35px;
+    padding: 0px 40px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .beneficios_section {
     grid-template-rows: 200px 420px 300px;
@@ -493,12 +538,13 @@ nav ul {
 @media screen and (max-width: 426px) {
   .beneficios_titulo {
     font-size: 28px;
+    padding: 0px 10px;
   }
   .beneficios_parrafo {
     margin: 0px 30px;
   }
   .beneficios_section {
-    grid-template-rows: 200px 700px 300px;
+    grid-template-rows: 400px 750px 300px;
   }
 }
 
@@ -512,11 +558,14 @@ nav ul {
 }
 
 @media screen and (max-width: 320px) {
+  .beneficios_titulo {
+    padding: 0px 5px;
+  }
   .beneficios_parrafo {
     padding: 20px 10px 0px 10px;
   }
   .beneficios_section {
-    grid-template-rows: 200px 800px 400px;
+    grid-template-rows: 350px 800px 300px;
   }
 }
 

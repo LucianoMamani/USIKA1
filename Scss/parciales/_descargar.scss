@@ -1,17 +1,7 @@
 /* estilos para la pagina de DESCARGAR */
 
 .descargar {
-
-    &_section {
-        padding: 1rem;
-        height: 620px;
-        background-color: $color-fondo-1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
+        
     &_titulo {
         font-size: 40px;
         text-align: center;
@@ -33,8 +23,6 @@
         width: 170px;
         border-radius: 30px;
         border: none;
-        background-color: $color-negro;
-        color: $color-blanco;
         transition: 0.3s;
     
         &:hover {
@@ -47,8 +35,6 @@
     
     
     &_section_2 {
-        padding: 1rem;
-        height: 100%;
         background-image: url(../Imagenes/fondodelasection2.svg);
         background-size: cover;
         background-position: center;
