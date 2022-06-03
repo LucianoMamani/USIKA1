@@ -37,11 +37,11 @@
 }
 
 .extend-titulo-margin {
-  margin: 0px 300px;
+  margin: 0px 200px;
 }
 
 .extend-parrafo, .extend-parrafo-text-align, .extend-parrafo-margin {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .extend-parrafo-text-align {
@@ -279,10 +279,21 @@ nav ul {
 /* Estilos para la pagina de IMAGENES*/
 .imagenes_section_1 {
   background-color: #001220;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 400px 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .imagenes_parrafo_1 {
   padding: 20px 100px;
+}
+
+.imagenes_section_2 {
+  background-image: url(../Imagenes/fondodelasection2.svg);
+  background-size: cover;
+  background-position: center;
 }
 
 .imagenes_carrusel {
@@ -296,7 +307,7 @@ nav ul {
   background-position: center;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 200px 250px 400px;
+  grid-template-rows: 400px 250px 400px;
   justify-items: center;
   align-items: center;
 }
@@ -505,12 +516,18 @@ nav ul {
 
 /* RESPONSIVE para la pagina de Imagenes*/
 @media screen and (max-width: 768px) {
+  .imagenes_titulo {
+    margin: 0px 100px;
+  }
   .imagenes_carrusel {
     padding: 3rem;
   }
 }
 
 @media screen and (max-width: 425px) {
+  .imagenes_titulo {
+    margin: 0px 50px;
+  }
   .imagenes_parrafo_1 {
     font-size: 20px;
     padding: 20px 20px;
@@ -518,6 +535,12 @@ nav ul {
   .imagenes_carrusel {
     padding: 1rem;
     margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .imagenes_titulo {
+    margin: 0px 10px;
   }
 }
 

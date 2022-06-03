@@ -51,12 +51,12 @@ $section: (
     
     &-margin {
         @extend .extend-titulo;
-        margin: 0px 300px;
+        margin: 0px 200px;
     }
 }
 
 .extend-parrafo {
-    font-size: 18px;
+    font-size: 20px;
 
     &-text-align {
         @extend .extend-parrafo;

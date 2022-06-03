@@ -241,12 +241,20 @@
 /* RESPONSIVE para la pagina de Imagenes*/
 
 @media screen and (max-width: 768px){
+    .imagenes_titulo {
+        margin: 0px 100px;
+    }
+
     .imagenes_carrusel {
         padding: 3rem;
     }
 }
 
 @media screen and (max-width: 425px){
+    .imagenes_titulo {
+        margin: 0px 50px;
+    }
+
     .imagenes_parrafo_1 {
         font-size: 20px;
         padding: 20px 20px;
@@ -255,6 +263,12 @@
     .imagenes_carrusel {
         padding: 1rem;
         margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .imagenes_titulo {
+        margin: 0px 10px;
     }
 }
 
