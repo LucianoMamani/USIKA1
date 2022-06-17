@@ -309,11 +309,6 @@
 
     .beneficios_parrafo {
         padding: 30px 30px 0px 30px; 
-
-    }
-
-    .beneficios_section {
-        margin: 0px 5px;
     }
 }
 
@@ -337,5 +332,71 @@
 
     .beneficios_section {
         grid-template-rows: 200px 900px 400px;
+    }
+}
+
+/* RESPONSIVE para dispositivos de 768px de ancho para la pagina de Contacto*/
+
+@media screen and (max-width: 1024px) {
+    
+    .contacto_section {
+        grid-template-rows: 40vh 30vh 90vh;
+    }
+
+    .contacto_section_parrafo {
+        padding: 2rem 7rem;
+    }
+
+    .contacto_section_formulario {
+        height: 80vh;
+        width: 100vh;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    .contacto_section {
+        grid-template-rows: 40vh 40vh 90vh;
+    }
+
+    .contacto_section_parrafo {
+        padding: 2rem 4rem;
+    }
+
+    .contacto_section_formulario {
+        height: 80vh;
+        width: 70vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .contacto_section {
+        grid-template-rows: 40vh 40vh 90vh;
+    }
+
+    .contacto_section_parrafo {
+        padding: 2rem 2rem;
+    }
+
+    .contacto_section_formulario {
+        height: 80vh;
+        width: 60vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .contacto_section {
+        grid-template-rows: 40vh 50vh 90vh;
+    }
+
+    .contacto_section_parrafo {
+        padding: 2rem 2rem;
+    }
+
+    .contacto_section_formulario {
+        height: 80vh;
+        width: 50vh;
     }
 }

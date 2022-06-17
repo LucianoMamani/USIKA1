@@ -168,9 +168,9 @@ nav ul {
 
 /* estilos para la pagina de INICIO */
 .inicio_boton {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 40px;
   height: 40px;
   width: 170px;
@@ -221,9 +221,9 @@ nav ul {
 }
 
 .descargar_boton {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 15px;
   height: 40px;
   width: 170px;
@@ -281,7 +281,7 @@ nav ul {
   background-color: #001220;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 400px 300px;
+  grid-template-rows: 100vh 300px;
   justify-content: center;
   align-items: center;
 }
@@ -307,7 +307,7 @@ nav ul {
   background-position: center;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 400px 250px 400px;
+  grid-template-rows: 100vh 250px 400px;
   justify-items: center;
   align-items: center;
 }
@@ -319,6 +319,70 @@ nav ul {
 .beneficios_parrafo {
   font-size: 18px;
   padding: 30px 60px 0px 60px;
+}
+
+/*Estilos para la pagina de CONTACTO*/
+.contacto_section {
+  background-image: url(../Imagenes/fondodelasection2.svg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40vh 35vh 80vh;
+  grid-template-areas: "ele1 ele1" "ele2 ele2" "ele3 ele3";
+  justify-items: center;
+  color: white;
+}
+
+.contacto_section_titulo {
+  grid-area: ele1;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.contacto_section_parrafo {
+  grid-area: ele2;
+  padding: 2rem 9rem;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contacto_section_formulario {
+  grid-area: ele3;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 20px 50px;
+  height: 70vh;
+  width: 100vh;
+}
+
+.contacto_section_formulario form .ingresar {
+  border-bottom: 2px solid #adadad;
+  margin: 35px 0px;
+}
+
+.contacto_section_formulario form .ingresar input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 5px;
+  color: #eee;
+}
+
+.contacto_section_formulario form button {
+  height: 45px;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  color: white;
+  background-color: #9E1FED;
+  border-radius: 20px;
 }
 
 /*RESPONSIVE para el HEADER*/
@@ -575,9 +639,6 @@ nav ul {
   .beneficios_parrafo {
     padding: 30px 30px 0px 30px;
   }
-  .beneficios_section {
-    margin: 0px 5px;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -595,6 +656,59 @@ nav ul {
 @media screen and (max-width: 300px) {
   .beneficios_section {
     grid-template-rows: 200px 900px 400px;
+  }
+}
+
+/* RESPONSIVE para dispositivos de 768px de ancho para la pagina de Contacto*/
+@media screen and (max-width: 1024px) {
+  .contacto_section {
+    grid-template-rows: 40vh 30vh 90vh;
+  }
+  .contacto_section_parrafo {
+    padding: 2rem 7rem;
+  }
+  .contacto_section_formulario {
+    height: 80vh;
+    width: 100vh;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contacto_section {
+    grid-template-rows: 40vh 40vh 90vh;
+  }
+  .contacto_section_parrafo {
+    padding: 2rem 4rem;
+  }
+  .contacto_section_formulario {
+    height: 80vh;
+    width: 70vh;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contacto_section {
+    grid-template-rows: 40vh 40vh 90vh;
+  }
+  .contacto_section_parrafo {
+    padding: 2rem 2rem;
+  }
+  .contacto_section_formulario {
+    height: 80vh;
+    width: 60vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contacto_section {
+    grid-template-rows: 40vh 50vh 90vh;
+  }
+  .contacto_section_parrafo {
+    padding: 2rem 2rem;
+  }
+  .contacto_section_formulario {
+    height: 80vh;
+    width: 50vh;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
